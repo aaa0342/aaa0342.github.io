@@ -13,16 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: "aaa0342"
+email: "aaa0342@dgu.ac.kr"
+description: >- 
+  LLM, Multimodal, LLM Security 관심 있는 학석사생의 블로그
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
 search: true
+url : "https://aaa0342.github.io"
+baseurl: ""
+repository: "aaa0342/aaa0342.github.io"
 
 # Build settings
 markdown: kramdown
@@ -31,7 +32,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 include:
   - _pages
@@ -58,34 +59,25 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "aaa0342"
+  avatar : 
+  bio    : "Computer AI student interested in LLM, Multimodal AI, LLM Security."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/aaa0342"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:aaa0342@dgu.ac.kr"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/aaa0342"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:aaa0342@dgu.ac.kr"
 
 defaults:
   # _posts
@@ -96,7 +88,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
