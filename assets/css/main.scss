@@ -1,0 +1,34 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+.page {
+    max-width: 1100px;
+}
+
+.page__inner-wrap {
+    max-width: 850px;
+}
+
+// Body text size
+.page__content {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+/* Reduce right-side whitespace */
+@media (min-width: 1024px) {
+    .page {
+        padding-inline-end: 2em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .page {
+        padding-inline-end: 3em;
+    }
+}

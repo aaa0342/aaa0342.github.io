@@ -1,0 +1,10 @@
+{
+    "scss.validate": false,
+    "[scss]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "never"
+        }
+    }
+}
