@@ -1,0 +1,37 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+<div class="entries-list">
+  {% for post in posts %}
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}" rel="permalink">
+            <i class="fas fa-link" aria-hidden="true" title="permalink"></i>
+            <span class="sr-only">Permalink</span>
+          </a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        {% endif %}
+      </h2>
+      <p class="page__meta">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      </p>
+    </article>
+  {% endfor %}
+</div>
+
+{% include paginator.html %}

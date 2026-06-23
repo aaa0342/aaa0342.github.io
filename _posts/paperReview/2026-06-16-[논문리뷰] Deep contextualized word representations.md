@@ -1,3 +1,7 @@
+---
+title: "[논문리뷰] Deep contextualized word representations"
+---
+
 # Abtstract
 
 이 논문에서 제안하는 것은 
@@ -69,8 +73,8 @@ ELMo는 다음과 같은 원리로 생성된다.
     = \left\{ h^{LM}_{k,j} \mid j = 0, \dots, L \right\}
     $$
 
-    - $h^{LM}_{k, 0}$ 은 token layer을 의미하고
-    - $h^{LM}_{k,j} = [\overrightarrow{h}^{LM}_{k,j}; \overleftarrow{h}^{LM}_{k,j}]$ 은 biLSTM에서 Forward LM과 backward LM layer 의미한다.
+    - $h^{LM}_{k, 0}$ 은 token layer을 의미한다.
+    - {::nomarkdown}$h^{LM}_{k,j} = \left[\overrightarrow{h}^{LM}_{k,j}; \overleftarrow{h}^{LM}_{k,j}\right]${:/nomarkdown} 은 biLSTM에서 Forward LM과 backward LM layer을 표현한다.
 
 2. downstream model에게 전달되기 위해서 $R$의 모든 레이어들이 하나의 벡터로 압축이 된다.
 
